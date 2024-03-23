@@ -1,4 +1,4 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+![image](https://github.com/ADARSH778/BOOLEAN_FUNCTION_MINIMIZATION/assets/149347361/ee222f02-9ba5-480f-a335-e0807145227c)# BOOLEAN_FUNCTION_MINIMIZATION
 
 **AIM:**
 
@@ -32,19 +32,40 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+module booleanmin(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+wire adash,bdash,cdash,ddash,p,q,r,s,t,u;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+not(ydash,y);
+and(p,bdash,ddash);
+and(q,adash,b,d);
+and(r,a,b,cdash);
+or(f1,p,q,r);
+and(s,ydash,z);
+and(t,x,y);
+and(u,w,y);
+or(f2,s,t,u);
+endmodule
+ 
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+Developed by:R Adarsh Chowdary
+ RegisterNumber:212223040166
 
-Developed by: RegisterNumber:*/
-
-
+```
 **RTL realization**
 
 **Output:**
 
 **RTL**
+![Screenshot (28)](https://github.com/ADARSH778/BOOLEAN_FUNCTION_MINIMIZATION/assets/149347361/9c41f91f-9598-4474-b862-1d3de27f9cec)
 
 **Timing Diagram**
+![Screenshot (27)](https://github.com/ADARSH778/BOOLEAN_FUNCTION_MINIMIZATION/assets/149347361/e113328f-3a54-433f-8798-c801db502104)
 
 **Result:**
 
